@@ -2,22 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Weather App</title>
   </head>
   <body>
     <div class="mainDiv">
       <div class="searchBar">
-        <input
-          type="text"
-          id="inputLocation"
-        />
-        <label for="inputLocation">Location: </label>
+        <fieldset>
+          <input type="text" id="inputLocation" location-input />
+          <label for="inputLocation">Location: </label>
+          <button search-button>></button>
+        </fieldset>
+
+        <div class="currentLocation" current-location></div>
       </div>
-      <div class="infoDisplay"></div>
+      <div class="infoDisplay">
+        <div class="topLeft">
+          <img top-left-img src="" alt="" />
+          <div class="weatherDesc" weather-desc></div>
+        </div>
+        <div class="topRight" top-right>
+          <div curr-temp></div>
+          <div min-temp></div>
+          <div max-temp></div>
+        </div>
+        <div class="bottomLeft"></div>
+        <div class="bottomRight">4</div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,2 +1,6 @@
 import "./style.css";
-import { getWeather } from "./weather.js";
+import { getWeather, buttonFunctionality } from "./getWeather.js";
+
+buttonFunctionality();
+
+getWeather("melbourne");
